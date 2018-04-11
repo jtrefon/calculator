@@ -23,3 +23,15 @@ hs_err_pid*
 
 #build folder
 build/
+
+### Gradle
+.gradle
+# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
+!gradle-wrapper.jar
+# Cache of project
+.gradletasknamecache
+
+/nbproject/private/
+/dist/
+/.nb-gradle/
+
