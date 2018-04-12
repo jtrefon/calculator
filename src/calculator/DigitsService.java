@@ -9,7 +9,7 @@ public class DigitsService implements DigitsInterface {
     private float _current;
 
     /**
-     *
+     * Adds new Digit
      * @param newDigit
      */
     public void addNew(float newDigit) {
@@ -17,7 +17,7 @@ public class DigitsService implements DigitsInterface {
     }
 
     /**
-     *
+     * returns "current" value
      * @return float Current number
      */
     @Override
@@ -26,7 +26,7 @@ public class DigitsService implements DigitsInterface {
     }
 
     /**
-     *
+     * Resets current number and sets it to 0
      */
     public void resetCurrent() {
         this._current = 0;

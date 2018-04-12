@@ -19,5 +19,13 @@ public class AdditionDecoratorTest {
         instance.add();
         assertEquals(instance.equals(), 246, 0.0);
     }
+    
+    @Test
+    public void testAdditionIncorrectService() {
+        System.out.println("AdditionIncorrectDecorator");
+        AdditionDecorator instance = new AdditionDecorator(new DigitsServiceMock());
+        instance.add();
+        assertNotEquals(instance.equals(), 245, 0.0);
+    }
 
 }
