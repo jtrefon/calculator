@@ -208,9 +208,6 @@ is divided into following sections:
                 <available classname="junit.framework.Test" classpath="${run.test.classpath}"/>
             </or>
         </condition>
-        <condition property="testng.available">
-            <available classname="org.testng.annotations.Test" classpath="${run.test.classpath}"/>
-        </condition>
         <condition property="junit+testng.available">
             <and>
                 <istrue value="${junit.available}"/>

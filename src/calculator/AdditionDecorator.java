@@ -8,6 +8,10 @@ public class AdditionDecorator extends EquationService {
 
     private final DigitsService _digitsService;
 
+    /**
+     * Constructor for injection
+     * @param digitsService 
+     */
     AdditionDecorator(DigitsService digitsService) {
         this._digitsService = digitsService;
     }
