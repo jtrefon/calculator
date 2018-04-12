@@ -15,7 +15,6 @@ public class EquationTest {
      */
     @Test
     public void testGetSetEquation() {
-        System.out.println("get/setEquation");
         EquationService instance = new EquationService();
         char expResult = '+';
         instance.setEquation(expResult);
@@ -29,7 +28,6 @@ public class EquationTest {
      */
     @Test
     public void testGetSetEquationNegated() {
-        System.out.println("get/setEquation Negated");
         EquationService instance = new EquationService();
         char expResult = '+';
         instance.setEquation(expResult);
@@ -42,7 +40,6 @@ public class EquationTest {
      */
     @Test
     public void testGetSetEquated() {
-        System.out.println("get/setEquated");
         EquationService instance = new EquationService();
         float expResult = 12.3F;
         instance.setEquated(expResult);
@@ -55,7 +52,6 @@ public class EquationTest {
      */
     @Test
     public void testGetSetNotEqualEquated() {
-        System.out.println("get/setEquated");
         EquationService instance = new EquationService();
         float expResult = 12.3F;
         instance.setEquated(expResult);
@@ -68,7 +64,6 @@ public class EquationTest {
      */
     @Test
     public void testEquals() {
-        System.out.println("Equals");
         EquationService instance = new EquationService();
         float result = instance.getEquated();
         assertEquals(0.0F, result, 0.0);
@@ -79,7 +74,6 @@ public class EquationTest {
      */
     @Test
     public void testNotEquals() {
-        System.out.println("Not Equals");
         EquationService instance = new EquationService();
         float result = instance.getEquated();
         assertNotEquals(0.1F, result, 0.0);

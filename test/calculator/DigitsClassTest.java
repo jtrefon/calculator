@@ -5,7 +5,7 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author NEX5SVZ
+ * @author Jacek Trefon
  */
 public class DigitsClassTest {
 
@@ -14,19 +14,18 @@ public class DigitsClassTest {
      */
     @Test
     public void testAddNewWithZero() {
-        System.out.println("test with 0");
         DigitsService instance = new DigitsClassImpl();
         instance.addNew(1);
         instance.addNew(0);
         instance.addNew(1);
         assertEquals(instance.getCurrent(), 101, 0.0F);
     }
+    
     /**
      * Test of addNew negation method, of class DigitsClass.
      */
     @Test
     public void testAddNewNegationWithZero() {
-        System.out.println("test with 0");
         DigitsService instance = new DigitsClassImpl();
         instance.addNew(1);
         instance.addNew(0);
@@ -39,7 +38,6 @@ public class DigitsClassTest {
      */
     @Test
     public void testAddNew() {
-        System.out.println("addNew & test Current");
         DigitsService instance = new DigitsClassImpl();
         instance.addNew(1);
         instance.addNew(2);
@@ -52,7 +50,6 @@ public class DigitsClassTest {
      */
     @Test
     public void testAddNewNegation() {
-        System.out.println("addNew & test Current Negation");
         DigitsService instance = new DigitsClassImpl();
         instance.addNew(1);
         instance.addNew(2);
@@ -65,7 +62,6 @@ public class DigitsClassTest {
      */
     @Test
     public void testReset() {
-        System.out.println("Reset");
         DigitsService instance = new DigitsClassImpl();
         instance.addNew(1);
         instance.addNew(2);
@@ -83,7 +79,6 @@ public class DigitsClassTest {
      */
     @Test
     public void testResetNegation() {
-        System.out.println("Reset Negation");
         DigitsService instance = new DigitsClassImpl();
         instance.addNew(1);
         instance.addNew(2);

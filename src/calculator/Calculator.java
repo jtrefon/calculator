@@ -4,7 +4,7 @@ package calculator;
  *
  * @author Jacek Trefon
  */
-public class calculator {
+public class Calculator {
 
     /**
      * @param args the command line arguments
