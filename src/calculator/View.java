@@ -27,7 +27,7 @@ public class View extends javax.swing.JFrame {
   private javax.swing.JLabel jLabel1;
   // End of variables declaration//GEN-END:variables
 
-    private DigitsService digits = new DigitsService();
+    private final DigitsService digits = new DigitsService();
     private CalculateFacade calculate;
 
     /**
@@ -341,10 +341,8 @@ public class View extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new View().setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            new View().setVisible(true);
         });
     }
 
